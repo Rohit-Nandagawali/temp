@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_background"
+    android:orientation="vertical"
+    tools:context=".bookSlot">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Shop Image Banner -->
+
+            <!-- Choose Your Slots Text -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Shop Name -->
+
+                <ImageView
+                    android:id="@+id/shopBannerImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/shop_image" />
+
+                <TextView
+                    android:id="@+id/shopNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Shop Name"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/cl_green"
+                    android:textSize="28sp" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/emailTextViewLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:textAllCaps="true"
+                    android:text="Select charging point"
+                    android:textColor="@color/cl_faint_green"
+                    android:textSize="10sp"
+                    android:layout_marginTop="16dp"
+                    android:singleLine="true"
+                    android:textStyle="bold" />
+                <!-- Day Spinner -->
+                <Spinner
+                    android:id="@+id/daySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:paddingVertical="5dp"
+                    android:background="@drawable/edittext_background"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/timeslots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:textAllCaps="true"
+                    android:text="select time slots"
+                    android:textColor="@color/cl_faint_green"
+                    android:textSize="10sp"
+                    android:layout_marginTop="16dp"
+                    android:singleLine="true"
+                    android:textStyle="bold" />
+                <!-- Available Time Slots Chip Group -->
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/timeSlotsChipGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    app:singleSelection="true"
+                   >
+
+                <!-- Add multiple chips to the ChipGroup -->
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    app:chipIcon="@drawable/baseline_access_time"
+
+                    android:text="12:30 am"
+                    android:textColor="@color/white"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                   />
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    app:chipIcon="@drawable/baseline_access_time"
+
+                    android:text="12:30 am"
+                    android:textColor="@color/white"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                   />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        app:chipIcon="@drawable/baseline_access_time"
+
+                        android:text="12:30 am"
+                        android:textColor="@color/white"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        app:chipIcon="@drawable/baseline_access_time"
+
+                        android:text="12:30 am"
+                        android:textColor="@color/white"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        app:chipIcon="@drawable/baseline_access_time"
+
+                        android:text="12:30 am"
+                        android:textColor="@color/white"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        />
+
+                    <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        app:chipIcon="@drawable/baseline_access_time"
+
+                        android:text="12:30 am"
+                        android:textColor="@color/white"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        />
+   <com.google.android.material.chip.Chip
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        app:chipIcon="@drawable/baseline_access_time"
+
+                        android:text="12:30 am"
+                        android:textColor="@color/white"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        />
+
+
+                </com.google.android.material.chip.ChipGroup>
+
+                <!-- Book Button -->
+                <Button
+                    android:id="@+id/bookButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:text="Book"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:backgroundTint="@null"
+                    android:background="@drawable/gradient"
+                    android:textAllCaps="false"
+                    android:textSize="17dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
