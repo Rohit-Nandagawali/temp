@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/cl_black"
+    tools:context=".UpdateEvStationActivity">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update EV Station"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/cl_green"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/cl_faint_green"
+        android:text="Please fill out the form below to \nupdate EV station information"
+        android:textSize="10sp"
+        android:layout_marginBottom="20dp"
+
+        />
+
+
+    <!-- Energy EditText -->
+    <TextView
+        android:id="@+id/emailTextViewLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:textAllCaps="true"
+        android:text="Energy (watts)"
+        android:textColor="@color/cl_faint_green"
+        android:textSize="8sp"
+        android:singleLine="true"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" ex. 125.00"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:inputType="numberDecimal"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_medium"
+        android:textColorHint="@color/cl_faint_green"
+        android:textSize="16dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edittext_background"
+        />
+
+    <!-- Available Toggle Button -->
+    <TextView
+        android:id="@+id/available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:textAllCaps="true"
+        android:text="Is this EV station currently available?"
+        android:textColor="@color/cl_faint_green"
+        android:textSize="8sp"
+        android:singleLine="true"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textAlignment="center"
+            android:text="Unavailable"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/grey"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/btnAvailable"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+
+            android:textOff="Unavailable"
+            android:textOn="Available"
+            android:checked="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textAlignment="center"
+            android:text="Available"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/cl_faint_green"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+    <!-- Type Radio Buttons -->
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:textAllCaps="true"
+        android:text="Select the charging connector type"
+        android:textColor="@color/cl_faint_green"
+        android:textSize="8sp"
+        android:singleLine="true"
+
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/btnType1"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Type 1"
+
+            android:buttonTint="@color/cl_faint_green"
+            android:textColor="@color/cl_faint_green"
+            android:textSize="16sp"/>
+
+        <RadioButton
+            android:id="@+id/btnType2"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Type 2"
+            android:buttonTint="@color/cl_faint_green"
+            android:textColor="@color/cl_faint_green"
+            android:textSize="16sp"
+            android:layout_marginStart="16dp"/>
+
+        <RadioButton
+            android:id="@+id/btnType3"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Type 3"
+            android:buttonTint="@color/cl_faint_green"
+            android:textColor="@color/cl_faint_green"
+            android:textSize="16sp"
+            android:layout_marginStart="16dp"/>
+    </RadioGroup>
+
+    <!-- Update Button -->
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Update"
+        android:fontFamily="@font/poppins_semibold"
+        android:padding="10dp"
+        android:backgroundTint="@null"
+        android:background="@drawable/gradient"
+        android:textAllCaps="false"
+        android:textSize="17dp"/>
+
+
+</LinearLayout>
