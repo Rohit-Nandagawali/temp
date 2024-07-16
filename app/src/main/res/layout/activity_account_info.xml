@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountInfo">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exp"
+                android:textSize="40dp"
+                android:textColor="@color/purple100"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingLeft="1dp"
+                android:text="Tracker"
+                android:textColor="@color/black"
+                android:textSize="38dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/linear_layout_1"
+            android:layout_marginTop="20dp"
+            android:padding="20dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Set your Budget"
+                android:textSize="25dp"
+                android:gravity="center_horizontal"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppins"
+                android:text="Allocate your expenses and start tracking your spending effortlessly."
+                android:textAlignment="center"
+                android:textColor="#a6a7af"
+                android:textSize="17dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear_layout_2"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginTop="25dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Expected expenses"
+                android:textSize="18dp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/purple60"/>
+
+
+
+            <EditText
+                android:id="@+id/etfood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_drawable"
+                android:padding="16dp"
+                android:hint="Food"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_medium"/>
+
+            <EditText
+                android:id="@+id/ethealth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_drawable"
+                android:padding="16dp"
+                android:hint="Health"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_medium"/>
+
+            <EditText
+                android:id="@+id/etliving"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_drawable"
+                android:padding="16dp"
+                android:hint="Living"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_medium"/>
+
+            <EditText
+                android:id="@+id/ettransport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_drawable"
+                android:padding="16dp"
+                android:hint="Transport"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_medium"/>
+
+            <EditText
+                android:id="@+id/etpayable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_drawable"
+                android:padding="16dp"
+                android:hint="Payable"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_medium"/>
+
+            <EditText
+                android:id="@+id/etmiscellneous"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_drawable"
+                android:padding="16dp"
+                android:hint="Miscellaneous"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_medium"/>
+
+
+
+            <Button
+                android:id="@+id/btnlogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:padding="15dp"
+                android:background="@drawable/button_drawable"
+                android:text="Next"
+                android:textSize="17dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_semibold"/>
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
