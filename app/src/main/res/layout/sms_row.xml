@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+ >
+    <TextView
+        android:id="@+id/tvID"
+        android:text="hello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:background="@drawable/sms_avatar"
+                    android:text="C"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvMerchantName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chetan Patil"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/poppins_medium"
+                        tools:text="Chetan Patil" />
+
+
+
+                    <TextView
+                        android:id="@+id/tvCategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mislinius"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppins_light"
+                        tools:text="Mislinius" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹1000"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins_medium"
+                    tools:text="₹1000" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="19/04/2024"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    tools:text="19 July 2024"
+                    android:fontFamily="@font/poppins_light"
+                    android:layout_weight="1"
+
+                    />
+                <TextView
+                    android:id="@+id/tvTransactionType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Credit"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins_light"
+                    tools:text="Credit" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey40"
+        />
+
+
+</LinearLayout>
