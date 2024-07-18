@@ -235,6 +235,16 @@
         android:fontFamily="@font/poppins_semibold"
         android:textColor="@color/grey100"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Organized Expenses"
+        android:textSize="10sp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/poppins_light"
+        android:textColor="@color/grey100"/>
+
+
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -613,8 +623,16 @@
         android:layout_marginTop="20dp"
         android:text="Last Transactions"
         android:textSize="20dp"
-        android:layout_marginBottom="10dp"
         android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/grey100"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Review Your Most Recent Transactions"
+        android:textSize="10sp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/poppins_light"
         android:textColor="@color/grey100"/>
 
     <LinearLayout

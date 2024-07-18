@@ -14,13 +14,21 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:text="Transactions"
             android:textSize="20dp"
             android:fontFamily="@font/poppins_semibold"
             android:textColor="@color/grey100"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Track Your Spending in Real Time"
+            android:textSize="10sp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/poppins_light"
+            android:textColor="@color/grey100"/>
 
-    <LinearLayout
+
+        <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -76,6 +84,15 @@
             android:text="Summery"
             android:textSize="20dp"
             android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/grey100"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get an Overview of Your Financial Health"
+            android:textSize="10sp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/poppins_light"
             android:textColor="@color/grey100"/>
 
 
