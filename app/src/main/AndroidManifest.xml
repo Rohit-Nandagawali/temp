@@ -12,6 +12,9 @@
         android:theme="@style/Theme.ChetanPatilBlackRocks"
         tools:targetApi="31">
         <activity
+            android:name=".ShowTransaction"
+            android:exported="false" />
+        <activity
             android:name=".NewsActivity"
             android:exported="false" />
         <activity
